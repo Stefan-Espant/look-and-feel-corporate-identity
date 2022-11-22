@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1"
+    />
+    <title>Toolgankelijkheid · Robuust</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/mobile.css" />
+    <link rel="stylesheet" href="styles/tablet.css" />
+    <link rel="stylesheet" href="styles/desktop.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./assets/va-favicon.png"
+    />
+  </head>
+
+  <body>
+    <header>
+      <img
+        id="logo"
+        src="assets/logo.png"
+        alt="logo Vervoerregio Amsterdam"
+      />
+    <div id="after-curve"></div>
+  </header>
+
+    <!-- Hieronder bevinden zich de 4 hoofdcategorieën -->
+    <aside class="cntt">
+      <a href="waarneembaar.html" class="categorie">
+        <svg
+          viewBox="0 0 388 268"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M168.133 0H25.8667C17.2444 0 0 5.16 0 25.8V242C0 250.6 5.17333 267.8 25.8667 267.8H362.133C370.756 267.8 388 262.64 388 242V51.6C388 43 382.827 25.8 362.133 25.8H219.867C215.556 25.8 204.347 23.22 194 12.9C183.653 2.58 172.444 0 168.133 0Z"
+          />
+        </svg>
+        <p>Waarneembaar</p>
+      </a>
+      <a href="./begrijpelijk.html" class="categorie">
+        <svg
+          viewBox="0 0 388 268"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M168.133 0H25.8667C17.2444 0 0 5.16 0 25.8V242C0 250.6 5.17333 267.8 25.8667 267.8H362.133C370.756 267.8 388 262.64 388 242V51.6C388 43 382.827 25.8 362.133 25.8H219.867C215.556 25.8 204.347 23.22 194 12.9C183.653 2.58 172.444 0 168.133 0Z"
+          />
+        </svg>
+        <p>Begrijpelijk</p>
+      </a>
+      <a href="./bedienbaar.html" class="categorie">
+        <svg
+          viewBox="0 0 388 268"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M168.133 0H25.8667C17.2444 0 0 5.16 0 25.8V242C0 250.6 5.17333 267.8 25.8667 267.8H362.133C370.756 267.8 388 262.64 388 242V51.6C388 43 382.827 25.8 362.133 25.8H219.867C215.556 25.8 204.347 23.22 194 12.9C183.653 2.58 172.444 0 168.133 0Z"
+          />
+        </svg>
+        <p>Bedienbaar</p>
+      </a>
+      <a class="categorie active">
+        <svg
+          viewBox="0 0 388 268"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M168.133 0H25.8667C17.2444 0 0 5.16 0 25.8V242C0 250.6 5.17333 267.8 25.8667 267.8H362.133C370.756 267.8 388 262.64 388 242V51.6C388 43 382.827 25.8 362.133 25.8H219.867C215.556 25.8 204.347 23.22 194 12.9C183.653 2.58 172.444 0 168.133 0Z"
+          />
+        </svg>
+        <p>Robuust</p>
+      </a>
+    </aside>
+
+    <!-- Dit is de sectie waar de content staat -->
+    <main class="subject">
+      <div class="toptab">
+        <div class="tab"></div>
+        <div class="curve"></div>
+        <div class="curve-bg"></div>
+        <!-- Dit zijn de twee knoppen om de toegankelijkheid van de content te verbeteren -->
+        <ul class="ui-settings">
+          <li>
+            <a
+              href="https://stefan-espant.github.io/all-human-accessible-website/" aria-label="Ga terug naar de homepagina"
+            >
+            <i class="fa-solid fa-house"></i>
+            </a>
+          </li>
+          <li>
+            <button
+              class="fontSize"
+              aria-label="Vergroot tekst"
+              onclick="fontSize()"
+            >
+              <svg
+                width="44"
+                height="36"
+                viewBox="0 0 33 21"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M13.1123 20L12.1043 15.828H6.44827L5.46827 20H0.708266L6.56027 0.595999H12.1323L17.9843 20H13.1123ZM7.23227 12.496H11.3203L9.27627 3.928L7.23227 12.496ZM31.1399 15.688C31.1399 16.248 31.2146 16.6587 31.3639 16.92C31.5319 17.1813 31.7932 17.3773 32.1479 17.508L31.2239 20.392C30.3092 20.3173 29.5626 20.1213 28.9839 19.804C28.4052 19.468 27.9572 18.9453 27.6399 18.236C26.6692 19.7293 25.1759 20.476 23.1599 20.476C21.6852 20.476 20.5092 20.0467 19.6319 19.188C18.7546 18.3293 18.3159 17.2093 18.3159 15.828C18.3159 14.204 18.9132 12.9627 20.1079 12.104C21.3026 11.2453 23.0292 10.816 25.2879 10.816H26.7999V10.172C26.7999 9.29467 26.6132 8.69733 26.2399 8.38C25.8666 8.044 25.2132 7.876 24.2799 7.876C23.7946 7.876 23.2066 7.95067 22.5159 8.1C21.8252 8.23067 21.1159 8.41733 20.3879 8.66L19.3799 5.748C20.3132 5.39333 21.2652 5.12267 22.2359 4.936C23.2252 4.74933 24.1399 4.656 24.9799 4.656C27.1079 4.656 28.6666 5.09467 29.6559 5.972C30.6452 6.84933 31.1399 8.16533 31.1399 9.92V15.688ZM24.4479 17.312C25.4559 17.312 26.2399 16.836 26.7999 15.884V13.252H25.7079C24.6999 13.252 23.9439 13.4293 23.4399 13.784C22.9546 14.1387 22.7119 14.6893 22.7119 15.436C22.7119 16.0333 22.8612 16.5 23.1599 16.836C23.4772 17.1533 23.9066 17.312 24.4479 17.312Z"
+                  fill=""
+                />
+              </svg>
+            </button>
+          </li>
+    
+          <li>
+            <button
+              class="contrast-trigger"
+              id="changeContrast"
+              aria-label="Vergroot kleur contrast"
+            >
+              <svg
+                width="36"
+                height="36"
+                viewBox="0 0 36 36"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M18 36C27.9411 36 36 27.9411 36 18C36 8.05887 27.9411 0 18 0C8.05887 0 0 8.05887 0 18C0 27.9411 8.05887 36 18 36ZM19.9943 32.0033C26.8608 31.0343 32.1429 25.134 32.1429 18C32.1429 10.866 26.8608 4.96574 19.9943 3.99665C18.9005 3.84229 18 4.75091 18 5.85548L18 18L18 30.1445C18 31.2491 18.9005 32.1577 19.9943 32.0033Z"
+                  fill=""
+                />
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </div>
+      <section class="folder" id="fontIncrease">
+        <div class="content">
+          <h1>Selecteer een onderwerp</h1>
+          <div class="subcat">
+            <button class="subcat-btn" data-id="article4_1">
+              4.1 Juiste HTML structuur
+            </button>
+            <button class="subcat-btn" data-id="article4_2">
+              4.2 Gebruik spaties & tabs
+            </button>
+            <button class="subcat-btn" data-id="article4_3">
+              4.3 Afbeeldingen met tekstalternatief
+            </button>
+            <button class="subcat-btn" data-id="article4_4">
+              4.4 Afbeeldingen met omschreven link
+            </button>
+            <button class="subcat-btn" data-id="article4_5">
+              4.5 Decoratieve afbeeldingen
+            </button>
+            <button class="subcat-btn" data-id="article4_6">
+              4.6 Audio & video alternatieven
+            </button>
+            <button class="subcat-btn" data-id="article4_7">
+              4.7 Visuele transscript
+            </button>
+            <button class="subcat-btn" data-id="article4_8">
+              4.8 Gebruik echte tabellen
+            </button>
+          </div>
+          <article
+            id="article4_1"
+            class="content-item hide"
+          >
+            <h2>
+              4.1 Is de juiste structuur van de tekst
+              aangegeven via de editor van het CMS of in
+              HTML-codes
+            </h2>
+            <br />
+            <div>
+              <h3 class="uitleg">
+                <i class="fa-solid fa-circle-info"></i>
+                Uitleg
+              </h3>
+            </div>
+            <p>
+              Als een website “onder water” goed in elkaar
+              zit, dan is de basis voor toegankelijkheid
+              gelegd. Ontwikkelaars kunnen in de technische
+              standaard WCAG 2.1 meer lezen over technieken
+              die gebruikt kunnen worden om aan de
+              toegankelijkheidseisen te voldoen.
+            </p>
+            <br />
+            <div>
+              <h3 class="tip">
+                <i class="fa-regular fa-lightbulb"></i> Tip
+              </h3>
+            </div>
+            <p>
+              Voor het bouwen van websites zijn
+              internationale standaarden ontwikkeld. Door de
+              standaarden te volgen gebruik je de code op de
+              manier waarop deze bedoeld is.
+              Hulptechnologieën sluiten aan bij de ze
+              standaarden.
+            </p>
+          </article>
+          <article
+            id="article4_2"
+            class="content-item hide"
+          >
+            <h2>
+              4.2 Er zijn geen spaties of tabs gebruikt om
+              kolommen, tabellen of speciale teksteffecten
+              te maken.
+            </h2>
+            <br />
+            <div>
+              <h3 class="uitleg">
+                <i class="fa-solid fa-circle-info"></i>
+                Uitleg
+              </h3>
+            </div>
+            <p>
+              Als je wilt dat jouw tekst in kolommen of in
+              een tabel verschijnt, gebruik dan niet de
+              spatiebalk of de tab-toets om dit te doen,
+              omdat dit de tekst onbegrijpelijk maakt voor
+              bezoekers die gebruik maken van
+              assistentietechnologie. Kolommen die op deze
+              manier worden aangemaakt worden rij voor rij
+              gelezen, niet kolom voor kolom.
+            </p>
+            <br />
+            <div>
+              <h3 class="tip">
+                <i class="fa-regular fa-lightbulb"></i> Tip
+              </h3>
+            </div>
+            <p>
+              Tabellen moeten gemaakt worden met de
+              tabelfuncties van de editor in het CMS. Voor
+              kolommen en woorden met letters die verder uit
+              elkaar staan, moet CSS gebruikt worden.
+            </p>
+          </article>
+          <article
+            id="article4_3"
+            class="content-item hide"
+          >
+            <h2>
+              4.3 Afbeeldingen die informatie overdragen
+              hebben een tekstueel alternatief
+            </h2>
+            <br />
+            <div>
+              <h3 class="uitleg">
+                <i class="fa-solid fa-circle-info"></i>
+                Uitleg
+              </h3>
+            </div>
+            <p>
+              Door afbeeldingen te voorzien van een
+              tekstueel alternatief maak je ze dus
+              toegankelijk voor bezoekers die de
+              afbeeldingen niet kunnen zien. Ook
+              zoekmachines zoals Google maken gebruik van
+              tekstalternatieven bij het indexeren van
+              websites.
+            </p>
+            <br />
+            <div>
+              <h3 class="tip">
+                <i class="fa-regular fa-lightbulb"></i> Tip
+              </h3>
+            </div>
+            <p>
+              Een tekstueel alternatief werkt alleen als de
+              beschrijving adequaat is. In veel gevallen
+              gaat het om ‘vertellen wat je ziet’. Soms gaat
+              het juist om ‘vertellen wat dit doet’,
+              bijvoorbeeld bij een button in een formulier.
+              En als een afbeelding geen informatie
+              toevoegt, is het beter ook geen
+              tekstalternatief te geven. Denk goed na over
+              de tekstuele beschrijving. Iemand die alleen
+              de tekstalternatieven ziet zou de informatie
+              nog steeds moeten kunnen begrijpen en de
+              website nog steeds moeten kunnen gebruiken.
+            </p>
+          </article>
+          <article
+            id="article4_4"
+            class="content-item hide"
+          >
+            <h2>
+              4.4 Afbeeldingen die als link worden gebruikt,
+              hebben een alt-tekst die het doel van de link
+              beschrijft.
+            </h2>
+            <br />
+            <div>
+              <h3 class="uitleg">
+                <i class="fa-solid fa-circle-info"></i>
+                Uitleg
+              </h3>
+            </div>
+            <p>
+              Wanneer het niet duidelijk is welk ingevuld
+              veld foutief is ingevuld kunnen gebruikers
+              vastlopen. De alt-tekst beschrijft het doel of
+              de richting van de afbeelding in plaats van de
+              afbeelding zelf.
+            </p>
+            <br />
+            <div>
+              <h3 class="tip">
+                <i class="fa-regular fa-lightbulb"></i> Tip
+              </h3>
+            </div>
+            <p>
+              Als de afbeelding in een link staat met een
+              tekst erbij, dan is de afbeelding ook
+              niet-informatief en ook dan volstaat een leeg
+              alt-attribuut. De screenreader leest dan de
+              linktekst op. Als de afbeelding aanklikbaar is
+              en in de link staat geen tekst, dan gebruik je
+              wel een alt-tekst en beschrijf je waar de
+              afbeelding naartoe linkt.
+            </p>
+          </article>
+          <article
+            id="article4_5"
+            class="content-item hide"
+          >
+            <h2>
+              4.5 Decoratieve afbeeldingen kunnen door
+              hulptechnologieën genegeerd worden.
+            </h2>
+            <br />
+            <div>
+              <h3 class="uitleg">
+                <i class="fa-solid fa-circle-info"></i>
+                Uitleg
+              </h3>
+            </div>
+            <p>
+              Decoratieve afbeeldingen zijn niet relevant
+              voor gebruikers van hulptechnologieën. De
+              decoratieve afbeeldingen mogen de
+              begrijpelijkheid niet beïnvloeden.
+            </p>
+            <br />
+            <div>
+              <h3 class="tip">
+                <i class="fa-regular fa-lightbulb"></i> Tip
+              </h3>
+            </div>
+            <p>
+              Dit kan bijvoorbeeld door de alt-tekst leeg te
+              laten.
+            </p>
+          </article>
+          <article
+            id="article4_6"
+            class="content-item hide"
+          >
+            <h2>
+              4.6 Audio en video hebben een kort tekstueel
+              alternatief dat de inhoud beschrijft.
+            </h2>
+            <br />
+            <div>
+              <h3 class="uitleg">
+                <i class="fa-solid fa-circle-info"></i>
+                Uitleg
+              </h3>
+            </div>
+            <p>
+              Alle vormen van audio en video moeten een kort
+              tekstalternatief krijgen. Dit is vergelijkbaar
+              met de alt-tekst van afbeeldingen. Door deze
+              korte tekst weten bezoekers die
+              hulptechnologie gebruiken, ook als de audio of
+              video zelf niet toegankelijk zou zijn, in
+              ieder geval waar ze mee te maken hebben.
+            </p>
+            <br />
+            <div>
+              <h3 class="tip">
+                <i class="fa-regular fa-lightbulb"></i> Tip
+              </h3>
+            </div>
+            <p>
+              Hoe je dit alternatief plaatst hangt af van de
+              techniek die gebruikt is om het
+              multimediabestand op de webpagina te plaatsen.
+            </p>
+          </article>
+          <article
+            id="article4_7"
+            class="content-item hide"
+          >
+            <h2>
+              4.7 Filmpjes, bewegend beeld en audio hebben
+              (indien nodig) een transcript.
+            </h2>
+            <br />
+            <div>
+              <h3 class="uitleg">
+                <i class="fa-solid fa-circle-info"></i>
+                Uitleg
+              </h3>
+            </div>
+            <p>
+              In het transcript vertel je zo compleet
+              mogelijk het verhaal van het filmpje. Je
+              vertelt wat er gebeurt. Dus wat er te zien en
+              te horen is en wat er gezegd wordt. Specifiek door wie.
+              Eventuele interactieve elementen neem je ook
+              op in het transcript.
+            </p>
+            <br />
+            <div>
+              <h3 class="tip">
+                <i class="fa-regular fa-lightbulb"></i> Tip
+              </h3>
+            </div>
+            <p>
+              Kun je in het filmpje bijvoorbeeld op een knop
+              drukken, dan neem je in het transcript een
+              link op naar de pagina waar je die actie kunt
+              uitvoeren.
+            </p>
+          </article>
+          <article
+            id="article4_8"
+            class="content-item hide"
+          >
+            <h2>
+              4.8 Informatie die in een tabel hoort, staat
+              ook écht in een tabel en heeft de juiste
+              HTML-code.
+            </h2>
+            <br />
+            <div>
+              <h3 class="uitleg">
+                <i class="fa-solid fa-circle-info"></i>
+                Uitleg
+              </h3>
+            </div>
+            <p>
+              Gegevens in de tabel hebben zowel horizontaal
+              als verticaal een relatie met elkaar. Met de
+              juiste HTML-code kun je die relaties expliciet
+              maken. Je geeft dan aan welke cellen koppen
+              zijn en welke cellen gegevens bevatten. Bij
+              complexe tabellen geef je ook nog eens aan
+              welke kop precies bij welke cellen hoort.
+              Bezoekers die hulptechnologie gebruiken hebben
+              hier profijt van. Doordat de relaties in de
+              code staan kan de hulptechnologie de
+              informatie uit de tabel op een overzichtelijke
+              en logische manier presenteren.
+            </p>
+            <br />
+            <div>
+              <h3 class="tip">
+                <i class="fa-regular fa-lightbulb"></i> Tip
+              </h3>
+            </div>
+            <p>
+              Sommige tabellen zitten heel ingewikkeld in
+              elkaar, met meerdere niveaus en koppen. Het
+              kan dan nodig zijn om code toe te voegen aan
+              de tabel om de verbanden duidelijk te maken.
+              Stel jezelf echter de vraag of de tabel niet
+              kan worden vereenvoudigd of gesplitst in
+              meerdere tabellen.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div
+        class="emotion-group"
+        aria-label=""
+        
+      >
+        <h2 aria-label="Heeft deze pagina geholpen?">
+          Heeft deze pagina geholpen?
+        </h2>
+        <h4
+          aria-label="Maak een keuze uit de onderstaande knoppen."
+        >
+          Maak een keuze uit de onderstaande knoppen
+        </h4>
+        <div
+          class="emotion-group-btns"
+          aria-label="Hoe vind je de website?"
+          id="emotion-group"
+        >
+          <button
+            class="btn-emotion bg-green"
+            aria-label="blije smiley."
+            onclick="sendEmotion()"
+          >
+            <i class="icon fa-regular fa-face-smile"></i>
+          </button>
+          <button
+            class="btn-emotion bg-yellow"
+            aria-label="neutrale smiley."
+            onclick="sendEmotion()"
+          >
+            <i
+              class="icon c-black fa-regular fa-face-meh"
+            ></i>
+          </button>
+          <button
+            class="btn-emotion bg-red"
+            aria-label="ongelukkige smiley."
+            onclick="sendEmotion()"
+          >
+            <i class="icon fa-regular fa-face-frown"></i>
+          </button>
+        </div>
+      </div>
+      <nav>
+        <div class="footer-links">
+        <a href="mailto:info@vervoeregio.nl?subject=Feedback%20over%20Toolgankelijk"
+          aria-label="Stuur een e-mail naar Vervoeregio Amsterdam."
+          ><i class="fa-solid fa-envelope"></i>  Contact ons</a
+        >
+        <a
+        href="ontwikkelaar.html"
+        aria-label="Lees meer info over de ontwikkelaar van Toolgankeljk."
+        ><i class="fa-solid fa-address-card"></i> Over de ontwikkelaar</a
+      >
+    </div>
+        <div class="social-media-group">
+          <h3 class="c-magenta">
+            Deel deze tool op:
+          </h3>
+          <div>
+            <a
+              target="_blank"
+              href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse"
+              class="fb-xfbml-parse-ignore"
+              aria-label="Deel deze website op Facebook."
+              ><i
+                class="icon fa-brands fa-square-facebook"
+              ></i
+            ></a>
+            <a
+            class="twitter-share-button"
+            href="https://twitter.com/intent/tweet?text=Hello%20world"
+              aria-label="Deel deze website op Twitter."
+              ><i class="icon fa-brands fa-twitter"></i
+            ></a>
+          </div>
+        </div>
+      </nav>
+    </footer>
+    <script
+      src="./scripts/script.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/45c29531a0.js"
+      crossorigin="anonymous"
+    ></script>
+    <div id="fb-root"></div>
+    <script
+      async
+      defer
+      crossorigin="anonymous"
+      src="https://connect.facebook.net/nl_NL/sdk.js#xfbml=1&version=v15.0"
+      nonce="TpOVwmNv"
+    ></script>
+  </body>
+</html>
