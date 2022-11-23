@@ -33,6 +33,11 @@ body {
   font-size: 100%;
 }
 
+body .dark-theme {
+  color: var(--c-white);
+  background-color: var(--c-black);
+}
+
 header {
   width: 100vw;
   height: 6vh;
@@ -407,6 +412,7 @@ a:focus-visible {
 ::selection {
   background-color: rgba(227, 0, 89, 0.33);
   opacity: 0.3;
+  color: var(--c-magenta);
 }
 
 /* color */
@@ -624,7 +630,7 @@ article {
 
 .hide {
   display: none;
-}x
+}
 
 .content-item {
   transition: 0.8s;
@@ -650,4 +656,15 @@ article {
   --c-blue: #485593;
   --c-magenta: #800041;
   transition: 0.4s ease-out;
+}
+
+/* Dark mode color scheme settings */
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--c-black);
+    color: var(--c-white);
+  }
+
+
 }
