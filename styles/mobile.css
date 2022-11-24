@@ -59,9 +59,29 @@
   }
 
   footer {
-    display: block;
-    margin: 1em auto;
     width: 100vw;
+    height: auto;
+    min-height: 10vh;
+    display: inline-block;
+    margin: 0;
+    background-color: var(--c-magenta);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+
+  }
+
+  footer::before {
+    content: "";
+    display: block;
+    width: 100vw;
+    height: 3vh;
+    background-image: linear-gradient(90deg, #b9005f01 0 5%, var(--c-magenta) 95%);
+    margin-top: -3vh;
+  }
+
+  footer div {
+    display: block;
   }
 
   footer nav {
@@ -76,14 +96,19 @@
     width: 80vw;
   }
 
+  footer h2,
+  h3,
+  h4 {
+    color: var(--c-white);
+  }
+
   footer nav a {
     display: inline-block;
     margin: auto;
   }
-  
 
   footer nav .icon {
-    display:flex;
+    display: flex;
     margin: auto;
     width: auto;
   }
@@ -94,6 +119,7 @@
 
   footer .social-media-group a {
     margin: 0 0.4em;
+    color: var(--c-white);
   }
   
   #emotion-group {
@@ -103,11 +129,12 @@
 
   .subject {
     display: block;
+    margin-bottom: 30em;
   }
 
   aside .cntt {
     width: 10vw;
-    height: 25vh;
+    height: fit-content;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -163,15 +190,15 @@
   }
 
   .options {
-    width: 80vw;
-    margin: 0.5em 1em;
+    width: 90vw;
+    margin: 0;
   }
 
   .option-group {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
   }
 
   .subject-img {
@@ -228,16 +255,65 @@
   }
 
   footer {
+    width: 100vw;
+    height: auto;
+    min-height: 10vh;
+    display: inline-block;
+    margin: 0;
+    background-color: var(--c-magenta);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+  }
+
+  footer::before {
+    content: "";
     display: block;
-    width: 80vw;
-    margin: 1em auto;
-    float: none;
+    width: 100vw;
+    height: 3vh;
+    background-image: linear-gradient(90deg, #b9005f01 0 5%, var(--c-magenta) 95%);
+    margin-top: -3vh;
+  }
+
+  footer div {
+    display: block;
   }
 
   footer nav {
-    display: flex;
+    display: block;
+    width: auto;
+    margin: 1em;
+  }
+
+  footer nav .footer-links {
+    display: block;
+    margin: 2em 0;
     width: 80vw;
+  }
+
+  footer h2,
+  h3,
+  h4 {
+    color: var(--c-white);
+  }
+
+  footer nav a {
+    display: inline-block;
     margin: auto;
+  }
+
+  footer nav .icon {
+    display: flex;
+    margin: auto;
+    width: auto;
+  }
+
+  footer .social-media-group {
+    margin: 1em;
+  }
+
+  footer .social-media-group a {
+    margin: 0 0.4em;
   }
 
   .subject {
@@ -256,7 +332,7 @@
 
   .cntt {
     width: 100vw;
-    height: 25vh;
+    height: fit-content;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -265,7 +341,7 @@
   }
 
   .wrapper {
-    width: 75vw;
+    width: 90vw;
     margin: 0 auto;
   }
 
@@ -275,8 +351,8 @@
   }
 
   .options {
-    width: 80vw;
-    margin: 0.5em 1em;
+    width: 90vw;
+    margin: 0;
   }
 
   .option-group {
@@ -346,9 +422,12 @@
       }
 
       footer {
-        display: block;
-        margin: 1em auto;
+        display: inline-block;
+        margin: 0;
         width: 100vw;
+        position: fixed;
+        left: 0;
+        bottom: 0;
       }
     
       footer nav {
@@ -358,7 +437,7 @@
       }
     
       footer nav .footer-links {
-        display: flex;
+        display: block;
         margin: 2em auto;
         width: 90vw;
       }

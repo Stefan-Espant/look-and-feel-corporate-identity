@@ -1,7 +1,7 @@
 @media (min-width: 1024px) and (max-width: 1919px) {
   .categorie {
     display: flex;
-    width: 16em;
+    width: 75%;
     margin: 0.4em 0.1em;
   }
 
@@ -34,11 +34,66 @@
     display: inline-block;
   }
 
+  .index {
+    margin: 6em auto;
+  }
+
   footer {
-    width: 70vw;
+    width: 100vw;
+    min-height: 10vh;
+    height: auto;
+    display: inline-block;
+    margin: 0;
+    background-color: var(--c-magenta);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+  }
+
+  footer::before {
+    content: "";
+    display: block;
+    width: 100vw;
+    height: 3vh;
+    background-image: linear-gradient(90deg, #b9005f01 0 5%, var(--c-magenta) 95%);
+    margin-top: -3vh;
+  }
+
+  footer div {
     display: flex;
-    margin: 0em auto 2em;
-    float: right;
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
+
+  footer .emotion-group {
+    margin: 1em;
+    max-width: 45vw;
+    display: block;
+  }
+
+  footer nav {
+    display: flex;
+    width: fit-content;
+  }
+
+  footer nav .footer-links {
+    display: block;
+  }
+
+  footer h2,
+  h3,
+  h4 {
+    color: var(--c-white);
+  }
+
+  .footer-links a {
+    display: block;
+    width: auto;
+    padding: 0.4em;
+    margin: 0.8em;
+    color: var(--c-white);
   }
 
   #desktop {
@@ -47,7 +102,7 @@
 
   .subject {
     display: inline-block;
-    margin: 4em 0 0em;
+    margin: 4em 0 12em;
   }
 
   .toptab {
@@ -89,7 +144,7 @@
 
   .cntt {
     width: 30vw;
-    height: 24em;
+    height: fit-content;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -119,7 +174,7 @@
     justify-content: center;
     align-items: center;
     display: inline-block;
-    height: 10em;
+    height: auto;
   }
 
   .options {

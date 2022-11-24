@@ -25,7 +25,7 @@
 
   main {
     display: block;
-    margin: 4em auto;
+    margin: 4em auto 15em;
   }
 
   main a {
@@ -38,32 +38,59 @@
   }
 
   footer {
-    width: 90vw;
-    display: flex;
+    width: 100vw;
+    min-height: 10vh;
+    display: inline-block;
     margin: auto;
     float: none;
+    background-color: var(--c-magenta);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+  }
+
+  footer::before {
+    content: "";
+    display: block;
+    width: 100vw;
+    height: 3vh;
+    background-image: linear-gradient(90deg, #b9005f01 0 5%, var(--c-magenta) 95%);
+    margin-top: -3vh;
+  }
+
+  footer div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   footer .emotion-group {
-    margin: 1em 0;
-    width: 45vw;
+    margin: 1em;
+    max-width: 45vw;
+    display: block;
   }
-  
+
   footer nav {
     display: flex;
-    width: auto;
-    margin: auto;
+    width: fit-content;
   }
-  
+
   footer nav .footer-links {
     display: block;
   }
-  
+
+  footer h2,
+  h3,
+  h4 {
+    color: var(--c-white);
+  }
+
   .footer-links a {
     display: block;
     width: auto;
     padding: 0.4em;
     margin: 0.8em;
+    color: var(--c-white);
   }
 
   .subject {
@@ -109,7 +136,7 @@
 
   .cntt {
     width: 90vw;
-    height: 25vh;
+    height: fit-content;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -118,18 +145,20 @@
   }
 
   .wrapper {
-    width: 75vw;
+    width: 90vw;
     margin: auto;
   }
 
   .intro {
     width: 80vw;
+    display: block;
     margin: auto;
     padding: 1em;
   }
 
   .options {
     width: 80vw;
+    display: block;
     margin: auto;
     padding: 1em;
   }
@@ -181,7 +210,7 @@
 @media (min-width: 640px) and (max-width: 768px) {
   .cntt {
     width: 80vw;
-    height: 25vh;
+    height: fit-content;
     display: flex;
     position: sticky;
     align-items: center;

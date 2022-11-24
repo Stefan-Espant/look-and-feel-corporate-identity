@@ -10,7 +10,10 @@
   --c-magenta: #B9005F;
   --c-brown: #6A4955;
   --c-dirt: #C9B5B2;
-  --c-black: #111;
+  --c-grey: #eee;
+  --c-silver: #888; 
+  --c-iron: #444;
+  --c-black: #222;
 }
 
 * {
@@ -28,14 +31,9 @@ body {
   height: 100vh;
   width: 100vw;
   font-family: Fira sans, sans-serif;
-  background-color: #eee;
+  background-color: var(--c-grey);
   transition: 0.8s ease-in-out;
   font-size: 100%;
-}
-
-body .dark-theme {
-  color: var(--c-white);
-  background-color: var(--c-black);
 }
 
 header {
@@ -46,18 +44,42 @@ header {
 }
 
 footer {
-  display: flex;
-  float: right;
+  width: 100vw;
+  height: auto;
+  display: inline-block;
+  background-color: var(--c-magenta);
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+
+footer::before {
+  content: "";
+  display: block;
+  width: 100vw;
+  height: 3vh;
+  background-image: linear-gradient(90deg, #b9005f01 0 5%, var(--c-magenta) 95%);
+  margin-top: -3vh;
+}
+
+footer div {
+  display: block;
 }
 
 footer nav {
-  display: flex;
-  width: 50%;
-  margin: auto;
+  display: block;
+  width: auto;
+  margin: 1em;
 }
 
 footer nav .footer-links {
   display: block;
+}
+
+footer h2,
+h3,
+h4 {
+  color: var(--c-white);
 }
 
 .footer-links a {
@@ -65,14 +87,24 @@ footer nav .footer-links {
   width: auto;
   padding: 0.4em 0.8em;
   margin: 0.8em;
+  color: var(--c-white);
+}
+
+.footer-links a:hover {
+  color: var(--c-magenta);
+}
+
+.footer-links a:focus {
+  color: var(--c-magenta);
 }
 
 .footer-link i {
-  margin: 0 0.4em 0 0em;
+  margin: 0 0.4em;
 }
 
 footer .social-media-group {
-  margin: auto;
+  margin: 1em;
+  display: block;
 }
 
 .social-media-group div {
@@ -85,10 +117,19 @@ footer .social-media-group {
   display: flex;
   padding: 0.4em;
   margin: 0.2em;
+  color: var(--c-white);
+}
+
+.social-media-group div a:hover {
+  color: var(--c-magenta);
+}
+
+.social-media-group div a:focus {
+  color: var(--c-magenta);
 }
 
 button {
-  background-color: #eee;
+  background: none;
   border: none;
   cursor: pointer;
   padding: 0.4em;
@@ -175,12 +216,14 @@ a {
   transition: 0.4s ease-in-out;
   transform-origin: center;
   padding: 0.8em 1.2em;
+  cursor: pointer;
 }
 
 a:hover {
   background-color: var(--c-white);
   transition: 0.4s;
   border-radius: 0.4em;
+  cursor: pointer;
 }
 
 .a-text {
@@ -278,7 +321,7 @@ article a:hover {
 
 .index {
   display: flex;
-  height: 80vh;
+  height: auto;
 }
 
 .wrapper {
@@ -368,7 +411,7 @@ a:focus-visible {
 }
 
 .subcat {
-  width: 80%;
+  width: auto;
   display: flex;
   margin: 0.8em 0;
   flex-wrap: wrap;
@@ -487,7 +530,7 @@ h2 {
   letter-spacing: -0.02em;
 }
 
-h3 {
+h3 {  
   font-size: 1.2em;
   max-width: 20em;
   letter-spacing: -0.02em;
@@ -514,12 +557,9 @@ p {
 }
 
 .emotion-group {
-    margin: 1em;
-}
-
-#emotion-group{
   display: block;
   width: auto;
+  margin: 1em;
 }
 
 .emotion-group-btns {
@@ -658,13 +698,99 @@ article {
   transition: 0.4s ease-out;
 }
 
+
+
+/* --- --- --- --- --- --- --- --- */ /* --- --- --- --- --- --- --- --- */
+/* --- --- --- --- --- --- --- --- */ /* --- --- --- --- --- --- --- --- */
+
+/* You are leaving the light zone */
+
+/* --- --- --- --- --- --- --- --- */ /* --- --- --- --- --- --- --- --- */
+/* --- --- --- --- --- --- --- --- */ /* --- --- --- --- --- --- --- --- */
+
 /* Dark mode color scheme settings */
 
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: var(--c-black);
-    color: var(--c-white);
-  }
-
-
+.dark-theme {
+  background-color: var(--c-black);
+  transition: 0.8s;
 }
+
+/* Header */
+
+
+/* aside */
+
+.dark-theme .active {
+  background-color: var(--c-iron);
+  border-radius: 0.4em;
+}
+
+.dark-theme .categorie:hover {
+  background-color: var(--c-silver);
+}
+
+.dark-theme .categorie:focus   {
+  background-color: var(--c-silver);
+  outline: 0.1em solid var(--c-white);
+}
+
+
+/* main */
+
+.dark-theme .tab {
+  background-color: var(--c-iron);
+}
+
+.dark-theme .tab {
+  background-color: var(--c-iron);
+}
+
+.dark-theme .curve {
+  background-color: var(--c-black);
+}
+
+.dark-theme .curve-bg {
+  background-color: var(--c-iron);
+}
+
+.dark-theme .folder {
+  background-color: var(--c-iron);
+}
+
+.dark-theme .ui-settings a:hover {
+  outline: 0.1em solid var(--c-white);
+  background: none;
+}
+
+.dark-theme .ui-settings a:focus {
+  fill: var(--c-white);
+  outline: 0.1em solid var(--c-white);
+  background-color: var(--c-silver);
+}
+
+.dark-theme .ui-settings button:hover {
+  fill: var(--c-white);
+  outline: 0.1em solid var(--c-white);
+  background: none;
+}
+
+.dark-theme .ui-settings button:focus {
+  color: var(--c-white);
+  outline: 0.1em solid var(--c-white);
+  background-color: var(--c-silver);
+}
+
+/* Footer */
+
+
+/* Typography */
+
+.dark-theme h1, h2, h3, h4, h5, h6 {
+  color: var(--c-white);
+}
+
+.dark-theme p {
+  color: var(--c-white);
+}
+
+/* Interactive *?
