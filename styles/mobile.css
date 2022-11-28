@@ -10,11 +10,11 @@
     display: block;
     flex: 0 0 3.6em;
     height: auto;
-    fill: var(--c-magenta);
+    fill: var(--c-primary);
   }
 
   .categorie .link-disabled svg {
-    fill: #ddd;
+    fill: var(--c-default);
   }
 
   .categorie p {
@@ -32,7 +32,7 @@
   .subcat-btn {
     width: auto;
     height: auto;
-    color: #fff;
+    color: var(--c-light);
     border: none;
     cursor: pointer;
     text-align: end;
@@ -54,6 +54,10 @@
     display: inline-block;
   }
 
+  .content-item h1, h2, h3, h4, h5, h6, i {
+    color: var(--c-light);
+  }
+
   #desktop {
     display: none;
   }
@@ -64,10 +68,11 @@
     min-height: 10vh;
     display: inline-block;
     margin: 0;
-    background-color: var(--c-magenta);
+    background-color: var(--c-primary);
     position: fixed;
     left: 0;
     bottom: 0;
+    z-index: 2;
 
   }
 
@@ -76,7 +81,7 @@
     display: block;
     width: 100vw;
     height: 3vh;
-    background-image: linear-gradient(90deg, #b9005f01 0 5%, var(--c-magenta) 95%);
+    background-image: linear-gradient(90deg, #b9005f01 0 5%, var(--c-primary) 95%);
     margin-top: -3vh;
   }
 
@@ -99,12 +104,16 @@
   footer h2,
   h3,
   h4 {
-    color: var(--c-white);
+    color: var(--c-light);
   }
 
   footer nav a {
     display: inline-block;
     margin: auto;
+  }
+
+  footer a:hover i {
+    color: var(--c-primary);
   }
 
   footer nav .icon {
@@ -152,7 +161,7 @@
     width: 5em;
     height: 3em;
     display: block;
-    background-color: #fff;
+    background-color: var(--c-default);
     margin: 0;
     border-radius: 3em 10em 0 0;
   }
@@ -162,7 +171,7 @@
     width: 3em;
     height: 3em;
     display: block;
-    background-color: #eee;
+    background-color: var(--c-accent-primary);
     margin: 0 0 0 -0.8em;
     border-radius: 0 5em 0 5em;
     z-index: 1;
@@ -173,7 +182,7 @@
     width: 3em;
     height: 2em;
     display: block;
-    background-color: #fff;
+    background-color: var(--c-default);
     margin: 0 0 0 -3em;
     border-radius: 2em 5em 0 0;
     z-index: 0;
@@ -224,6 +233,7 @@
 
   .folder {
     min-height: 25em;
+    padding: 1.6em 1em;
   }
 
 }
@@ -240,7 +250,7 @@
     display: block;
     width: 3.6em;
     height: auto;
-    fill: var(--c-magenta);
+    fill: var(--c-primary);
   }
 
   .categorie p {
@@ -251,7 +261,7 @@
 
   main {
     display: block;
-    margin: 4em auto;
+    margin: 4em auto 24em;
   }
 
   footer {
@@ -260,10 +270,11 @@
     min-height: 10vh;
     display: inline-block;
     margin: 0;
-    background-color: var(--c-magenta);
+    background-color: var(--c-primary);
     position: fixed;
     left: 0;
     bottom: 0;
+    z-index: 1;
   }
 
   footer::before {
@@ -271,7 +282,7 @@
     display: block;
     width: 100vw;
     height: 3vh;
-    background-image: linear-gradient(90deg, #b9005f01 0 5%, var(--c-magenta) 95%);
+    background-image: linear-gradient(90deg, #b9005f01 0 5%, var(--c-primary) 95%);
     margin-top: -3vh;
   }
 
@@ -294,7 +305,7 @@
   footer h2,
   h3,
   h4 {
-    color: var(--c-white);
+    color: var(--c-light);
   }
 
   footer nav a {
@@ -390,7 +401,7 @@
         width: 8em;
         height: 3em;
         display: block;
-        background-color: #fff;
+        background-color: var(--c-default);
         margin: 0;
         border-radius: 3em 10em 0 0;
       }
@@ -400,7 +411,7 @@
         width: 3em;
         height: 3em;
         display: block;
-        background-color: #eee;
+        background-color: var(--c-accent-primary);
         margin: 0 0 0 -0.8em;
         border-radius: 0 5em 0 5em;
         z-index: 1;
@@ -411,7 +422,7 @@
         width: 3em;
         height: 2em;
         display: block;
-        background-color: #fff;
+        background-color: var(--c-default);
         margin: 0 0 0 -3em;
         border-radius: 2em 5em 0 0;
         z-index: 0;
@@ -444,7 +455,7 @@
 
       .footer-links a {
         display: block;
-        width: auto;
+        width: fit-content;
         padding: 0.4em;
         margin: 0.8em;
       }
@@ -456,7 +467,7 @@
       
     
       footer nav .icon {
-        display:flex;
+        display: block;
         margin: auto;
         width: auto;
       }

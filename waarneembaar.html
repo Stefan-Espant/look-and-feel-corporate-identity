@@ -21,11 +21,9 @@
 
   <body>
     <header>
-      <img
+      <div
         id="logo"
-        src="assets/logo.png"
-        alt="logo Vervoerregio Amsterdam"
-      />
+      ></header>
       <div id="after-curve"></div>
     </header>
 
@@ -94,7 +92,9 @@
             <a
               href="/" aria-label="Ga terug naar de homepagina"
             >
-            <i class="fa-solid fa-house"></i>
+            <svg width="34" height="36" viewBox="0 0 34 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M33.4071 17.3722C34.0094 18.0099 33.5573 19.0588 32.6801 19.0588H31.0909C30.5386 19.0588 30.0909 19.5065 30.0909 20.0588V35C30.0909 35.5522 29.6432 36 29.0909 36H22C21.4477 36 21 35.5522 21 35V25C21 24.4477 20.5523 24 20 24H14C13.4477 24 13 24.4477 13 25V35C13 35.5522 12.5523 36 12 36H4.9091C4.35681 36 3.9091 35.5522 3.9091 35V20.0588C3.9091 19.5065 3.46139 19.0588 2.9091 19.0588H1.31994C0.442738 19.0588 -0.0093816 18.0099 0.592923 17.3722L16.273 0.769779C16.6676 0.351943 17.3324 0.351944 17.727 0.769779L33.4071 17.3722Z" fill=""/>
+              </svg>                            
             </a>
           </li>
           <li>
@@ -137,14 +137,6 @@
                   fill=""
                 />
               </svg>
-            </button>
-          </li>
-          <li>
-            <button class="btn-colorscheme">
-              <svg width="36" height="36" viewBox="0 0 36 36" fill="" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M19 0L22.4641 6H15.5359L19 0ZM28 19C28 23.9706 23.9706 28 19 28C14.0294 28 10 23.9706 10 19C10 14.0294 14.0294 10 19 10C23.9706 10 28 14.0294 28 19ZM31 22.4641L37 19L31 15.5359V22.4641ZM19 37L15.5359 31H22.4641L19 37ZM6 15.5359L0 19L6 22.4641V15.5359ZM6.43506 5.72792L13.1272 7.52107L8.22815 12.4201L6.43506 5.72792ZM30.8048 13.1272L32.598 6.43503L25.9059 8.22818L30.8048 13.1272ZM32.598 31.8909L25.9059 30.0977L30.8048 25.1987L32.598 31.8909ZM8.22815 25.9058L6.43506 32.598L13.1272 30.8048L8.22815 25.9058Z" fill=""/>
-                </svg>
-                
             </button>
           </li>
         </ul>
@@ -516,7 +508,7 @@
             onclick="sendEmotion()"
           >
             <i
-              class="icon c-black fa-regular fa-face-meh"
+              class="icon fa-regular fa-face-meh"
             ></i>
           </button>
           <button
@@ -546,7 +538,7 @@
     >
     </div>
         <div class="social-media-group">
-          <h3 class="c-magenta">
+          <h3>
             Deel deze tool op:
           </h3>
           <div>

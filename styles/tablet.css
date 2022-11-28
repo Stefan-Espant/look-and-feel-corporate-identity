@@ -10,7 +10,7 @@
     display: block;
     flex: 0 0 3.6em;
     height: auto;
-    fill: var(--c-magenta);
+    fill: var(--c-primary);
   }
 
   .categorie .link-disabled svg {
@@ -43,7 +43,7 @@
     display: inline-block;
     margin: auto;
     float: none;
-    background-color: var(--c-magenta);
+    background-color: var(--c-primary);
     position: fixed;
     left: 0;
     bottom: 0;
@@ -54,7 +54,7 @@
     display: block;
     width: 100vw;
     height: 3vh;
-    background-image: linear-gradient(90deg, #b9005f01 0 5%, var(--c-magenta) 95%);
+    background-image: linear-gradient(90deg, #b9005f01 0 5%, var(--c-primary) 95%);
     margin-top: -3vh;
   }
 
@@ -81,8 +81,11 @@
 
   footer h2,
   h3,
-  h4 {
-    color: var(--c-white);
+  h4,
+  h5,
+  h6,
+  i {
+    color: #fff;
   }
 
   .footer-links a {
@@ -90,7 +93,7 @@
     width: auto;
     padding: 0.4em;
     margin: 0.8em;
-    color: var(--c-white);
+    color: #fff
   }
 
   .subject {
@@ -101,34 +104,34 @@
     display: flex;
     align-items: baseline;
   }
-  
+
   .tab {
     content: '';
     width: 22em;
     height: 3em;
     display: block;
-    background-color: #fff;
+    background-color: var(--c-default);
     margin: 0;
     border-radius: 3em 10em 0 0;
   }
-  
+
   .curve {
     content: '';
     width: 3em;
     height: 3em;
     display: block;
-    background-color: #eee;
+    background-color: var(--c-accent-primary);
     margin: 0 0 0 -0.8em;
     border-radius: 0 5em 0 5em;
     z-index: 1;
   }
-  
-  .curve-bg  {
+
+  .curve-bg {
     content: '';
     width: 3em;
     height: 2em;
     display: block;
-    background-color: #fff;
+    background-color: var(--c-default);
     margin: 0 0 0 -3em;
     border-radius: 2em 5em 0 0;
     z-index: 0;
@@ -174,7 +177,7 @@
   }
 
   .subject-img {
-    width: 80em;
+    width: 100%;
     object-fit: cover;
   }
 
@@ -190,7 +193,6 @@
     right: 1em;
   }
 
-
   /* Typografie */
   h1 {
     font-size: 2em;
@@ -202,9 +204,8 @@
   }
 
   p {
-    color: #444;
+    color: var(--c-accent-tetriary);
   }
-
 }
 
 @media (min-width: 640px) and (max-width: 768px) {
