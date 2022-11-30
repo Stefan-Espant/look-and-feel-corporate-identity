@@ -10,7 +10,7 @@
         display: block;
         flex: 0 0 3.6em;
         height: auto;
-        fill: var(--c-magenta);
+        fill: var(--c-primary);
       }
     
       .categorie .link-disabled svg {
@@ -35,7 +35,7 @@
       }
 
       .content-item h1, h2, h3, h4, h5, h6, i {
-        color: var(--c-magenta);
+        color: var(--c-primary);
       }
     
       .index {
@@ -48,7 +48,7 @@
         height: auto;
         display: inline-block;
         margin: 0;
-        background-color: var(--c-magenta);
+        background-color: var(--c-primary);
         position: fixed;
         left: 0;
         bottom: 0;
@@ -78,7 +78,7 @@
       footer h2,
       h3,
       h4 {
-        color: var(--c-white);
+        color: var(--c-light);
       }
 
 
@@ -102,7 +102,7 @@
         width: 50%;
         height: 3em;
         display: block;
-        background-color: #fff;
+        background-color: var(--c-default);
         margin: 0;
         border-radius: 3em 10em 0 0;
       }
@@ -112,7 +112,7 @@
         width: 3em;
         height: 3em;
         display: block;
-        background-color: #eee;
+        background-color: var(--c-accent-primary);
         margin: 0 0 0 -0.8em;
         border-radius: 0 5em 0 5em;
         z-index: 1;
@@ -123,7 +123,7 @@
         width: 3em;
         height: 2em;
         display: block;
-        background-color: #fff;
+        background-color: var(--c-default);
         margin: 0 0 0 -3em;
         border-radius: 2em 5em 0 0;
         z-index: 0;
@@ -143,7 +143,7 @@
       #after-curve {
         width: 100vw;
         height: 2.5em;
-        background-color: #fff;
+        background-color: var(--c-default);
         float: inline-end;
         position: inherit;
       }
@@ -183,7 +183,7 @@
       .subject-img {
         width: 100%;
         padding: 2em 0 1em;
-        border-radius: 0.4em;
+        border-radius: var(--border-default);
         object-fit: cover;
       }
     
@@ -211,10 +211,6 @@
     
       h2 {
         font-size: 1.5em;
-      }
-    
-      p {
-        color: #444;
       }
     
 

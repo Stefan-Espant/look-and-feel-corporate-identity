@@ -25,7 +25,7 @@
 
   main {
     display: block;
-    margin: 4em auto 15em;
+    margin: 4em auto;
   }
 
   main a {
@@ -44,7 +44,7 @@
     margin: auto;
     float: none;
     background-color: var(--c-primary);
-    position: fixed;
+    position: static;
     left: 0;
     bottom: 0;
   }
@@ -85,15 +85,23 @@
   h5,
   h6,
   i {
-    color: #fff;
+    color: var(--c-light);
   }
 
   .footer-links a {
     display: block;
-    width: auto;
+    width: fit-content;
     padding: 0.4em;
     margin: 0.8em;
-    color: #fff
+    color: var(--c-light)
+  }
+
+  .footer-links a:hover i {
+    color: var(--c-primary);
+  }
+
+  .footer-links a:focus i {
+    color: var(--c-primary);
   }
 
   .subject {
@@ -216,7 +224,7 @@
     position: sticky;
     align-items: center;
     justify-content: space-around;
-    margin: 3em auto;
+    margin: 5em auto;
     flex-wrap: wrap;
   }
 }

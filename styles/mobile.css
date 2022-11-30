@@ -38,7 +38,7 @@
     text-align: end;
     margin: 0.2em 0.4em;
     padding: 0.4em 0.8em;
-    border-radius: 0.4em;
+    border-radius: var(--border-default);
     transition: 0.5s;
   }
 
@@ -54,8 +54,8 @@
     display: inline-block;
   }
 
-  .content-item h1, h2, h3, h4, h5, h6, i {
-    color: var(--c-light);
+  .content-item h1, h2, h3, h4, h5, h6 {
+    color: var(--c-primary);
   }
 
   #desktop {
@@ -69,9 +69,7 @@
     display: inline-block;
     margin: 0;
     background-color: var(--c-primary);
-    position: fixed;
-    left: 0;
-    bottom: 0;
+    position: static;
     z-index: 2;
 
   }
@@ -97,8 +95,8 @@
 
   footer nav .footer-links {
     display: block;
-    margin: 2em 0;
-    width: 80vw;
+    margin: 1em 0;
+    width: fit-content;
   }
 
   footer h2,
@@ -133,12 +131,12 @@
   
   #emotion-group {
     display: block;
-    width: 90vw;
+    width: fit-content;
   }
 
   .subject {
     display: block;
-    margin-bottom: 30em;
+    margin-bottom: 0;
   }
 
   aside .cntt {
@@ -261,7 +259,7 @@
 
   main {
     display: block;
-    margin: 4em auto 24em;
+    margin: 4em auto;
   }
 
   footer {
@@ -271,9 +269,7 @@
     display: inline-block;
     margin: 0;
     background-color: var(--c-primary);
-    position: fixed;
-    left: 0;
-    bottom: 0;
+    position: static;
     z-index: 1;
   }
 
@@ -287,7 +283,7 @@
   }
 
   footer div {
-    display: block;
+    display: flex;
   }
 
   footer nav {
@@ -298,8 +294,8 @@
 
   footer nav .footer-links {
     display: block;
-    margin: 2em 0;
-    width: 80vw;
+    margin: 0em 0 3em;
+    width: max-content;
   }
 
   footer h2,
@@ -436,7 +432,7 @@
         display: inline-block;
         margin: 0;
         width: 100vw;
-        position: fixed;
+        position: static;
         left: 0;
         bottom: 0;
       }
@@ -449,7 +445,7 @@
     
       footer nav .footer-links {
         display: block;
-        margin: 2em auto;
+        margin: 0em 0 3em;
         width: 90vw;
       }
 

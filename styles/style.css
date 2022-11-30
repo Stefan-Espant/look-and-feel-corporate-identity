@@ -13,6 +13,10 @@
   --c-succes: #25AE93;
   --c-info: #606eb3;
 
+  /* border */
+
+  --border-default: 0.4em;
+
 }
 
 * {
@@ -46,7 +50,7 @@ footer {
   height: auto;
   display: inline-block;
   background-color: var(--c-primary);
-  position: fixed;
+  position: static;
   left: 0;
   bottom: 0;
 }
@@ -94,11 +98,20 @@ h4 {
 }
 
 .footer-links a:focus {
-  color: var(--c-primary);
+  color: var(--c-info);
+  background-color: var(--c-light);
+  border-radius: var(--border-default);
+}
+
+.footer-links a:focus-within {
+  color: var(--c-info);
+  background-color: var(--c-light);
+  border-radius: var(--border-default);
+  outline: none;
 }
 
 .footer-links a:focus i {
-  color: var(--c-primary);
+  color: var(--c-info);
 }
 
 .footer-link i {
@@ -128,16 +141,22 @@ footer .social-media-group {
   background-color: var(--c-light);
 }
 
-.social-media-group div a:hover i {
+.social-media-group div a:hover i, svg {
   color: var(--c-primary);
 }
 
 .social-media-group div a:focus {
   color: var(--c-primary);
+  background-color: var(--c-light);
+  border-radius: var(--border-default);
 }
 
-.social-media-group div a:focus i {
-  color: var(--c-primary);
+.social-media-group div a:focus {
+  outline: none;
+}
+
+.social-media-group div a:focus i, svg {
+  color: var(--c-info);
 }
 
 button {
@@ -149,21 +168,22 @@ button {
 
 button:hover {
   background-color: var(--c-default);
-  border-radius: 0.4em;
+  border-radius: var(--border-default);
   transition: 0.4s ease-in-out;
 }
 
 button:focus {
   background-color: var(--c-default);
-  outline: 0.2em solid var(--c-primary);
-  border-radius: 0.4em;
+  outline: 0.2em solid var(--c-info);
+  border-radius: var(--border-default);
   padding: 0.4em;
   transition: 0.4s;
 }
 
 button:focus-visible {
-  outline: 0.2em solid var(--c-primary);
+  outline: none;
   transition: 0.4s;
+  border-radius: var(--border-default);
 }
 
 header #logo {
@@ -234,12 +254,13 @@ a {
 a:hover {
   background-color: var(--c-default);
   transition: 0.4s;
-  border-radius: 0.4em;
+  border-radius: var(--border-default);
   cursor: pointer;
 }
 
 .a-text {
   display: inline;
+  color: var(--c-invert);
 }
 
 .a-text:hover {
@@ -281,18 +302,25 @@ aside a {
 
 .categorie:hover {
   background-color: var(--c-default);
-  border-radius: 0.4em;
+  border-radius: var(--border-default);
   transition: 0.8s;
+}
+
+.categorie:focus {
+  background-color: var(--c-default);
+  border-radius: var(--border-default);
+  outline: 0.2em solid var(--c-info);
+  
 }
 
 .categorie:active {
   background-color: var(--c-default);
-  border-radius: 0.4em;
+  border-radius: var(--border-default);
 }
 
 .active {
   background-color: var(--c-default);
-  border-radius: 0.4em;
+  border-radius: var(--border-default);
 }
 
 .categorie svg {
@@ -321,6 +349,10 @@ main a {
   display: inline-block;
 }
 
+.content-item h3 {
+  color: var(--c-primary);
+}
+
 #desktop {
   display: none;
 }
@@ -328,7 +360,7 @@ main a {
 article a:hover {
   background-color: #b9006033;
   transition: 0.4s;
-  border-radius: 0.4em;
+  border-radius: var(--border-default);
 }
 
 .content-item h1,
@@ -336,8 +368,7 @@ h2,
 h3,
 h4,
 h5,
-h6,
-i {
+h6 {
   color: var(--c-primary);
 }
 
@@ -366,27 +397,6 @@ li {
   margin: 1em 0;
 }
 
-/* Operating */
-
-a:focus {
-  background-color: var(--c-default);
-  border-radius: 0.4em;
-  outline: 0.2em solid var(--c-primary);
-}
-
-a:focus-visible {
-  outline: 0.2em solid var(--c-primary);
-  transition: 0.4s;
-}
-
-/*button:focus {
-  background-color: var(--c-accent-primary);
-  border-radius: 0.4em;
-  color: var(--c-primary);
-  fill: var(--c-accent-primary);
-  outline: none;
-}
-
 /* Interface */
 
 .ui-settings {
@@ -409,7 +419,7 @@ a:focus-visible {
 }
 
 .ui-settings a:focus {
-  outline: 0.1em solid var(--c-focus-color);
+  outline: 0.1em solid var(--c-info);
 }
 
 .ui-settings li {
@@ -442,36 +452,41 @@ a:focus-visible {
   width: auto;
   height: auto;
   background-image: linear-gradient(95.6deg, var(--c-primary), var(--c-alert));
-  color: #eee;
+  color: var(--c-light);
   border: none;
   cursor: pointer;
   text-align: end;
   margin: 0.2em;
   padding: 0.4em 0.6em;
-  border-radius: 0.4em;
+  border-radius: var(--border-default);
   transition: 0.2s ease;
   font-size: 100%;
 }
 
-.subcat-btn h2 {
-  color: var(--c-accent-primary);
+.subcat-btn:hover {
+  background: linear-gradient(to right, var(--c-primary) 0%, var(--c-alert) 5%, var(--c-light) 5%);
+  border: none;
+  border-radius: var(--border-default);
+  margin: 0.2em;
+  padding: 0.4em 1.2em;
+  color: var(--c-info);
+  transition: 0.4s ease-in-out;
 }
 
 .subcat-btn:active {
-  background-color: var(--c-accent-primary);
-}
-
-.subcat-btn:focus {
-  background-image: linear-gradient(95.6deg, #fff, #eee);
   color: var(--c-primary);
   outline: 0.2em solid var(--c-primary);
-  transition: 0.8s;
+  background-image: var(--c-default);
   margin: 0.2em 0.4em;
   padding: 0.4em 0.8em;
 }
 
-.subcat-btn:hover {
-  opacity: 0.66;
+.subcat-btn:focus {
+  color: var(--c-info);
+  outline: 0.2em solid var(--c-info);
+  background-image: var(--c-default);
+  margin: 0.2em 0.4em;
+  padding: 0.4em 0.8em;
 }
 
 ::selection {
@@ -552,16 +567,18 @@ p {
   font-size: 2em;
   margin: 0.2em;
   transition: 0.8s ease-in-out;
+  color: var(--c-light);
 }
 
 .emotion-group {
   display: block;
-  width: auto;
+  width: fit-content;
   margin: 1em;
 }
 
 .emotion-group-btns {
   margin: 1em 0;
+  justify-content: flex-start;
 }
 
 .btn-emotion .icon {
@@ -574,12 +591,12 @@ p {
 }
 
 .btn-emotion:focus .icon {
-  color: var(--c-primary);
+  color: var(--c-info);
 }
 
 .btn-emotion {
   margin: 0 0.4em;
-  border-radius: 0.4em;
+  border-radius: var(--border-default);
 }
 
 .btn-emotion:hover {
@@ -595,7 +612,7 @@ p {
 
 .subject-img {
   width: 80vw;
-  border-radius: 0.4em;
+  border-radius: var(--border-default);
   margin: 1em 0;
 }
 
@@ -653,7 +670,7 @@ p {
 }
 
 .content svg {
-  margin: 0 0.2em 0 -0.4em;
+  margin: 0 0 -0.1em 0;
   fill: var(--c-primary);
 }
 
@@ -738,10 +755,10 @@ article {
   }
 
   .content-item h1, h2, h3, h4, h5, h6, i {
-    color: var(--c-invert);
+    color: var(--c-light);
   }
 
   .content-item h3, i {
-    color: var(--c-invert);
+    color: var(--c-light);
   }
 }

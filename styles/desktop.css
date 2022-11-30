@@ -34,10 +34,6 @@
     display: inline-block;
   }
 
-  .content-item h1, h2, h3, h4, h5, h6, i {
-    color: var(--c-primary);
-  }
-
   .index {
     margin: 6em auto;
   }
@@ -49,7 +45,13 @@
     display: inline-block;
     margin: 0;
     background-color: var(--c-primary);
-    position: fixed;
+    position: static;
+    left: 0;
+    bottom: 0;
+  }
+
+  .footer-sticky {
+    position: absolute;
     left: 0;
     bottom: 0;
   }
@@ -86,18 +88,31 @@
     display: block;
   }
 
+  .footer-links a i {
+    color: var(--c-light);
+  }
+
+  .footer-links a:hover i {
+    color: var(--c-primary);
+  }
+
+  .footer-links a:focus i, svg {
+    color: var(--c-info);
+  }
+
   footer h2,
   h3,
   h4 {
-    color: var(--c-white);
+    color: var(--c-light);
   }
 
   .footer-links a {
     display: block;
-    width: auto;
+    width: fit-content;
     padding: 0.4em;
     margin: 0.8em;
     color: var(--c-light);
+    outline: none;
   }
 
   #desktop {
@@ -106,7 +121,7 @@
 
   .subject {
     display: inline-block;
-    margin: 4em 0 12em;
+    margin: 4em 0;
   }
 
   .toptab {
@@ -202,8 +217,8 @@
 
   .subject-img {
     width: 100%;
-    padding: 2em 0 1em;
-    border-radius: 0.4em;
+    margin: 2em 0 1em;
+    border-radius: var(--border-default);
     object-fit: cover;
   }
 
