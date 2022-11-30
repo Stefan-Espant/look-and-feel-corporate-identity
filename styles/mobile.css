@@ -38,7 +38,7 @@
     text-align: end;
     margin: 0.2em 0.4em;
     padding: 0.4em 0.8em;
-    border-radius: var(--border-default);
+    border-radius: var(--border-radius-default);
     transition: 0.5s;
   }
 

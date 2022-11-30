@@ -15,7 +15,8 @@
 
   /* border */
 
-  --border-default: 0.4em;
+  --border-radius-min: 0.2em; 
+  --border-radius-default: 0.4em;
 
 }
 
@@ -100,13 +101,13 @@ h4 {
 .footer-links a:focus {
   color: var(--c-info);
   background-color: var(--c-light);
-  border-radius: var(--border-default);
+  border-radius: var(--border-radius-default);
 }
 
 .footer-links a:focus-within {
   color: var(--c-info);
   background-color: var(--c-light);
-  border-radius: var(--border-default);
+  border-radius: var(--border-radius-default);
   outline: none;
 }
 
@@ -148,7 +149,7 @@ footer .social-media-group {
 .social-media-group div a:focus {
   color: var(--c-primary);
   background-color: var(--c-light);
-  border-radius: var(--border-default);
+  border-radius: var(--border-radius-default);
 }
 
 .social-media-group div a:focus {
@@ -168,14 +169,14 @@ button {
 
 button:hover {
   background-color: var(--c-default);
-  border-radius: var(--border-default);
+  border-radius: var(--border-radius-default);
   transition: 0.4s ease-in-out;
 }
 
 button:focus {
   background-color: var(--c-default);
   outline: 0.2em solid var(--c-info);
-  border-radius: var(--border-default);
+  border-radius: var(--border-radius-default);
   padding: 0.4em;
   transition: 0.4s;
 }
@@ -183,7 +184,7 @@ button:focus {
 button:focus-visible {
   outline: none;
   transition: 0.4s;
-  border-radius: var(--border-default);
+  border-radius: var(--border-radius-default);
 }
 
 header #logo {
@@ -254,7 +255,7 @@ a {
 a:hover {
   background-color: var(--c-default);
   transition: 0.4s;
-  border-radius: var(--border-default);
+  border-radius: var(--border-radius-default);
   cursor: pointer;
 }
 
@@ -302,25 +303,25 @@ aside a {
 
 .categorie:hover {
   background-color: var(--c-default);
-  border-radius: var(--border-default);
+  border-radius: var(--border-radius-default);
   transition: 0.8s;
 }
 
 .categorie:focus {
   background-color: var(--c-default);
-  border-radius: var(--border-default);
+  border-radius: var(--border-radius-default);
   outline: 0.2em solid var(--c-info);
   
 }
 
 .categorie:active {
   background-color: var(--c-default);
-  border-radius: var(--border-default);
+  border-radius: var(--border-radius-default);
 }
 
 .active {
   background-color: var(--c-default);
-  border-radius: var(--border-default);
+  border-radius: var(--border-radius-default);
 }
 
 .categorie svg {
@@ -360,7 +361,7 @@ main a {
 article a:hover {
   background-color: #b9006033;
   transition: 0.4s;
-  border-radius: var(--border-default);
+  border-radius: var(--border-radius-default);
 }
 
 .content-item h1,
@@ -415,7 +416,7 @@ li {
   margin: 0;
   padding: 0.2em;
   font-size: 2em;
-  border-radius: 0.2em;
+  border-radius: var(--border-radius-min);
 }
 
 .ui-settings a:focus {
@@ -458,7 +459,7 @@ li {
   text-align: end;
   margin: 0.2em;
   padding: 0.4em 0.6em;
-  border-radius: var(--border-default);
+  border-radius: var(--border-radius-default);
   transition: 0.2s ease;
   font-size: 100%;
 }
@@ -466,7 +467,7 @@ li {
 .subcat-btn:hover {
   background: linear-gradient(to right, var(--c-primary) 0%, var(--c-alert) 5%, var(--c-light) 5%);
   border: none;
-  border-radius: var(--border-default);
+  border-radius: var(--border-radius-default);
   margin: 0.2em;
   padding: 0.4em 1.2em;
   color: var(--c-info);
@@ -596,7 +597,7 @@ p {
 
 .btn-emotion {
   margin: 0 0.4em;
-  border-radius: var(--border-default);
+  border-radius: var(--border-radius-default);
 }
 
 .btn-emotion:hover {
@@ -612,7 +613,7 @@ p {
 
 .subject-img {
   width: 80vw;
-  border-radius: var(--border-default);
+  border-radius: var(--border-radius-default);
   margin: 1em 0;
 }
 
@@ -760,5 +761,15 @@ article {
 
   .content-item h3, i {
     color: var(--c-light);
+  }
+
+  /* Form */
+
+  form {
+    display: block;
+  }
+
+  fieldset {
+    width: 33vw;
   }
 }

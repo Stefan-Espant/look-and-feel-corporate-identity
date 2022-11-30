@@ -218,7 +218,7 @@
   .subject-img {
     width: 100%;
     margin: 2em 0 1em;
-    border-radius: var(--border-default);
+    border-radius: var(--border-radius-default);
     object-fit: cover;
   }
 
