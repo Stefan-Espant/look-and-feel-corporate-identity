@@ -19,6 +19,7 @@
     
       .categorie p {
         margin: auto 0.8em;
+        color: var(--c-invert);
       }
     
       /* layout */
@@ -77,7 +78,7 @@
 
       footer h2,
       h3,
-      h4 {
+      p {
         color: var(--c-light);
       }
 
@@ -197,6 +198,12 @@
         position: absolute;
         right: 1em;
         height: 1em;
+      }
+
+      .back-2-top {
+        position: fixed;
+        right: 2em;
+        bottom: 2em;
       }
     
       /* Typografie */

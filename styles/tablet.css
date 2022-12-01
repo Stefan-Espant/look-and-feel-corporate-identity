@@ -19,6 +19,7 @@
 
   .categorie p {
     margin: auto 0.8em;
+    color: var(--c-invert);
   }
 
   /* layout */
@@ -84,7 +85,7 @@
   h4,
   h5,
   h6,
-  i {
+  i, p {
     color: var(--c-light);
   }
 
@@ -93,15 +94,15 @@
     width: fit-content;
     padding: 0.4em;
     margin: 0.8em;
-    color: var(--c-light)
+    fill: var(--c-light)
   }
 
-  .footer-links a:hover i {
-    color: var(--c-primary);
+  .footer-links a:hover svg {
+    fill: var(--c-primary);
   }
 
-  .footer-links a:focus i {
-    color: var(--c-primary);
+  .footer-links a:focus svg {
+    fill: var(--c-primary);
   }
 
   .subject {
@@ -151,7 +152,7 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin: 2.5em auto;
+    margin: 4em auto;
     flex-wrap: wrap;
   }
 
@@ -209,10 +210,6 @@
 
   h1 .toolgankelijk {
     font-size: 2em;
-  }
-
-  p {
-    color: var(--c-accent-tetriary);
   }
 }
 

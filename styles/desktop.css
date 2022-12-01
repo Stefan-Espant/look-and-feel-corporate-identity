@@ -19,6 +19,7 @@
 
   .categorie p {
     margin: auto 0.8em;
+    color: var(--c-invert);
   }
 
   /* layout */
@@ -88,21 +89,21 @@
     display: block;
   }
 
-  .footer-links a i {
-    color: var(--c-light);
+  .footer-links a svg {
+    fill: var(--c-light);
   }
 
-  .footer-links a:hover i {
-    color: var(--c-primary);
+  .footer-links a:hover svg {
+    fill: var(--c-primary);
   }
 
-  .footer-links a:focus i, svg {
-    color: var(--c-info);
+  .footer-links a:focus svg {
+    fill: var(--c-info);
   }
 
   footer h2,
   h3,
-  h4 {
+  p {
     color: var(--c-light);
   }
 
@@ -232,6 +233,11 @@
     position: absolute;
     right: 1em;
     height: 1em;
+  }
+
+  .back-2-top {
+    right: 2em;
+    bottom: 2em;
   }
 
   /* Typografie */
