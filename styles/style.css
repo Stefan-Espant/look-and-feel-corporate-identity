@@ -239,7 +239,7 @@ button:focus-visible {
 /* Header */
 
 header #logo {
-  content: url(/assets/logo.png);
+  content: url(../assets/logo.png);
   width: auto;
   height: 5em;
   border: 4px solid var(--c-default);
@@ -807,7 +807,7 @@ article {
   /* Header */
 
   header #logo {
-    content: url(/assets/logo-zw.png);
+    content: url(../assets/logo-zw.png);
   }
 
   /* Typography */
