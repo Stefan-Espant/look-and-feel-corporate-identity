@@ -344,6 +344,34 @@ aside a {
   flex-wrap: wrap;
 }
 
+.cntt div {
+  width: 80%;
+}
+
+.cntt div label {
+  display: block;
+  margin-bottom: 0.4em;
+  color: var(--c-invert);
+}
+
+.cntt div input {
+  width: 80%;
+  display: block;
+  background-color: var(--c-default);
+  border: none;
+  border-radius: var(--border-radius-default);
+  margin: 0.8em 0.2em;
+  padding: 0.4em;
+}
+
+.cntt div input:focus {
+  border: 0.2em solid var(--c-info);
+}
+
+.cntt div input:focus-within {
+  outline: none;
+}
+
 .categorie {
   display: inline-block;
   margin: 0.4em;
@@ -526,8 +554,8 @@ li {
 }
 
 .subcat-btn {
-  width: auto;
-  height: auto;
+  width: fit-content;
+  height: fit-content;
   background-image: linear-gradient(95.6deg, var(--c-primary), var(--c-alert));
   color: var(--c-light);
   border: none;
@@ -538,6 +566,8 @@ li {
   border-radius: var(--border-radius-default);
   transition: 0.2s ease;
   font-size: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .subcat-btn:hover {
@@ -545,7 +575,8 @@ li {
   border: none;
   border-radius: var(--border-radius-default);
   margin: 0.2em;
-  padding: 0.4em 1.2em;
+  padding: 0.4em 0.6em;
+  padding-left: 1em;
   color: var(--c-info);
   transition: 0.4s ease-in-out;
 }
@@ -564,6 +595,23 @@ li {
   background-image: var(--c-default);
   margin: 0.2em 0.4em;
   padding: 0.4em 0.8em;
+}
+
+.subcat-btn svg {
+  margin-right: 0.2em;
+  fill: var(--c-light);
+}
+
+.subcat-btn:hover svg {
+  fill: var(--c-info);
+}
+
+.subcat-btn:focus svg {
+  fill: var(--c-info);
+}
+
+.subcat-btn:active svg {
+  fill: var(--c-primary);
 }
 
 ::selection {
@@ -773,7 +821,10 @@ article {
   --c-succes: #096351;
   --c-info: #414C86;
   --c-primary: #800041;
+}
 
+.dark-contrast .cntt div input {
+  border: 0.2em solid var(--c-invert);
 }
 
 /* Toggle tussen font sizes */
@@ -804,10 +855,24 @@ article {
     --c-info: #606eb3;
   }
 
+  .dark-contrast {
+    --c-alert: #aa0044;
+    --c-warning: #755300;
+    --c-succes: #096351;
+    --c-info: #7183dc;
+    --c-primary: #800041;
+  }
+
   /* Header */
 
   header #logo {
     content: url(../assets/logo-zw.png);
+  }
+
+  /* Main */
+
+  .ui-settings svg {
+    fill: var(--c-light);
   }
 
   /* Typography */
@@ -839,6 +904,16 @@ article {
 
   .content-item svg {
     fill: var(--c-light);
+    width: 1em;
+    height: 1em;
+  }
+
+  /* Button */
+
+  .subcat-btn:hover {
+    background: linear-gradient(to right, var(--c-primary) 0%, var(--c-alert) 5%, var(--c-default) 5%);
+    color: var(--c-light);
+    transition: 0.4s ease-in-out;
   }
 
   /* Form */

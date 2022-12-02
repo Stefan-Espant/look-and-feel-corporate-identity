@@ -38,7 +38,7 @@
     cursor: pointer;
     text-align: end;
     margin: 0.2em 0.4em;
-    padding: 0.4em 0.8em;
+    padding: 0.4em 0.6em;
     border-radius: var(--border-radius-default);
     transition: 0.5s;
   }
@@ -53,10 +53,6 @@
   main a {
     padding: 0.8em;
     display: inline-block;
-  }
-
-  .content-item h1, h2, h3, h4, h5, h6 {
-    color: var(--c-primary);
   }
 
   #desktop {
