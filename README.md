@@ -13,8 +13,10 @@
 <!-- Voeg een mooie poster visual toe 📸 -->
 <!-- Voeg een link toe naar Github Pages 🌐-->
 De user story die ik koos luidde alsvolgt:
-> Als organisatie wil ik een overzicht van toegankelijkheidsverbeteringen kunnen bekijken, zodat ik een gevoel kan krijgen wat er moet gebeuren om mijn 
-website/app toegankelijker te maken op het terrein van waarneembaarheid, robuustheid, begrijpelijkheid en bedienbaarheid
+> Als gebruiker wil ik de webiste in een Donkere modus kunnen bekijken voor tijdens de donkere maanden
+
+> Als gebruiker wil ik een terug naar boven kunnen vinden om gemakkelijker te navigeren
+
 
 <img width="100%" alt="Schermafbeelding 2022-11-08 om 11 29 56" src="https://user-images.githubusercontent.com/89298385/200541607-26df96eb-b8a8-4a4a-bfce-cc1acccb91ba.png">
 <img width="100%" alt="Schermafbeelding 2022-11-08 om 11 30 11" src="https://user-images.githubusercontent.com/89298385/200541618-da7f8558-3f81-4ea6-993a-ce14b042dd16.png">
@@ -58,15 +60,21 @@ De aside bestaat uit 4 knoppen die doorlinken naar de hoofdcatergorieën:<br>
 
 #### main
 In de main wordt alle content getoond en getoggled wanneer de gebruiker op een knop klikt.
-
+Dit component bevat headings, tekst, links, afbeeldingen.
 
 ### css
 Alle pagina's hebben een `scroll-behavior: smooth;` om vloeiend te scrollen.<br>
 Ook heb ik alle klikbare elementen een `transition: 0.8s` gegeven om vloeiend en aangenaam van state te veranderen. Harde animaties wordt over het algemeen als grof beschouwd.
 
 ### javascript
-Javascript heb ik toegepast op de knoppen die de content laten weergeven.
+Javascript heb ik toegepast op de volgende functies:
+De `content-item` knoppen die de content laten weergeven in de main.
 
+De contrast knop die de verhouding van kleurcontrasten verhoogd en zo aan de WCAG AAA-eisen voldoen.
+
+De tekstvergroot knop die de tekst in de `main` vergroot tot 200%.
+
+De funcitie om feedback te geven op de website en reactie hierop aan de gebruiker.
 
 ## Bronnen
 
