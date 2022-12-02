@@ -58,15 +58,21 @@ De aside bestaat uit 4 knoppen die doorlinken naar de hoofdcatergorieën:<br>
 
 #### main
 In de main wordt alle content getoond en getoggled wanneer de gebruiker op een knop klikt.
-
+Dit component bevat headings, tekst, links, afbeeldingen.
 
 ### css
 Alle pagina's hebben een `scroll-behavior: smooth;` om vloeiend te scrollen.<br>
 Ook heb ik alle klikbare elementen een `transition: 0.8s` gegeven om vloeiend en aangenaam van state te veranderen. Harde animaties wordt over het algemeen als grof beschouwd.
 
 ### javascript
-Javascript heb ik toegepast op de knoppen die de content laten weergeven.
+Javascript heb ik toegepast op de volgende functies:
+De `content-item` knoppen die de content laten weergeven in de main.
 
+De contrast knop die de verhouding van kleurcontrasten verhoogd en zo aan de WCAG AAA-eisen voldoen.
+
+De tekstvergroot knop die de tekst in de `main` vergroot tot 200%.
+
+De funcitie om feedback te geven op de website en reactie hierop aan de gebruiker.
 
 ## Bronnen
 
