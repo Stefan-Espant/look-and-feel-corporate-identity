@@ -16,16 +16,16 @@ De user story die ik koos luidde alsvolgt:
 > Als gebruiker wil ik de webiste in een Donkere modus kunnen bekijken voor tijdens de donkere maanden
 
 > Als gebruiker wil ik een terug naar boven kunnen vinden om gemakkelijker te navigeren
+> 
+<img width="1512" alt="Schermafbeelding 2022-12-06 om 12 15 50" src="https://user-images.githubusercontent.com/89298385/205898114-fb059be6-dd1a-4fc9-aca1-d9a2ed3b6a7e.png">
+<img width="1512" alt="Schermafbeelding 2022-12-06 om 12 15 35" src="https://user-images.githubusercontent.com/89298385/205898109-0d31a687-4db2-4c80-bdfb-40cd51ee49b7.png">
+<img width="1512" alt="Schermafbeelding 2022-12-06 om 12 18 39" src="https://user-images.githubusercontent.com/89298385/205898121-8533ff4d-7174-4b5b-ae4b-1a9fdd6a07fe.png">
+<img width="1512" alt="Schermafbeelding 2022-12-06 om 12 18 01" src="https://user-images.githubusercontent.com/89298385/205898116-dd2740b9-10f0-43b3-9c9a-d03ac11c5107.png">
 
-
-<img width="100%" alt="Schermafbeelding 2022-11-08 om 11 29 56" src="https://user-images.githubusercontent.com/89298385/200541607-26df96eb-b8a8-4a4a-bfce-cc1acccb91ba.png">
-<img width="100%" alt="Schermafbeelding 2022-11-08 om 11 30 11" src="https://user-images.githubusercontent.com/89298385/200541618-da7f8558-3f81-4ea6-993a-ce14b042dd16.png">
 
 De sitemap begint op de landingspagina met een minimalistische opmaak. Het bestaat uit 3 onderdelen: een header, een main die is opgesplitst in 2 secties (de titel van het product en de aside met 4 hoofdcatergorieën).
 
-
-
-https://stefan-espant.github.io/all-human-accessible-website/ 
+https://stefan-espant.github.io/look-and-feel-corporate-identity// 
 
 ## Kenmerken
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met Javascript gedaan en hoe? Misschien heb je een framwork of library gebruikt? -->
