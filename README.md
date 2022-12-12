@@ -67,18 +67,10 @@ Alle pagina's hebben een `scroll-behavior: smooth;` om vloeiend te scrollen.<br>
 Ook heb ik alle klikbare elementen een `transition: 0.8s` gegeven om vloeiend en aangenaam van state te veranderen. Harde animaties wordt over het algemeen als grof beschouwd.
 
 Ook heb ik deze sprint op de juiste manier gebruik gemaakt van custom properties. 
-Zoals in kleur:
---c-primary: #B9005F;
---c-default: #444;
---c-light: #fff;
---c-accent-primary: #222;
---c-accent-secundary: #888;
---c-accent-tetriary: #fff;
---c-invert: #eee;
---c-alert: #E30059;
---c-warning: #FFD05F;
---c-succes: #25AE93;
---c-info: #606eb3;
+Zoals in kleur:<br>
+`--c-primary: #B9005F;`<br>
+`--c-default: #444;`<br>
+`--c-invert: #eee;`<br>
 
 ### javascript
 Javascript heb ik toegepast op de volgende functies:
